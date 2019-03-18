@@ -1,7 +1,10 @@
 --Make a list of size n of every other prime 
+--solution 10  should output [2,5,11,17,23,31,41,47,59,67]
+--solution 7   should output[2,5,11,17,23,31,41]
+
 
 --This is the main function to be called
-everyOtherPrimeUpTo n = [x | x<-(listPrimes n), x/= 0]
+solution n = [x | x<-(listPrimes n), x/= 0]
 
 --very hacky way to get every other element in haskell but that was my first idea
 --This is basically grabbing 2n primes multiplying it to a list of 1's and 0's [1,0,1,0,1,0,1,0,...1,0] of size 2n
